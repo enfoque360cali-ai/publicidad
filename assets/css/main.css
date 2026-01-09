@@ -1822,17 +1822,3 @@ section,
   margin: 0 auto;
   display: block;
 }
-
-@keyframes rotateClick {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
-}
-
-.logo-rotate {
-  animation: rotateClick 0.6s ease-in-out;
-}
-
-#logoEnfoque {
-  cursor: pointer;
-}
-
