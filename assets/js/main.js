@@ -159,6 +159,19 @@
       }, false);
     });
 
+    document.addEventListener("DOMContentLoaded", function () {
+  const logo = document.getElementById("logoEnfoque");
+
+  if (logo) {
+    logo.addEventListener("click", () => {
+      logo.classList.remove("logo-rotate");
+      void logo.offsetWidth;
+      logo.classList.add("logo-rotate");
+    });
+  }
+});
+
+
   });
 
 })();
