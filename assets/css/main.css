@@ -1822,3 +1822,11 @@ section,
   margin: 0 auto;
   display: block;
 }
+
+function scrollAbajo() {
+  window.scrollBy({
+    top: 300,   // cantidad de scroll (ajústalo)
+    left: 0,
+    behavior: 'smooth'
+  });
+}
