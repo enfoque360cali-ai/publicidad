@@ -162,3 +162,37 @@
   });
 
 })();
+
+
+window.addEventListener("load", () => {
+  if (typeof Isotope === "undefined") return;
+
+  const portfolio = document.querySelector(".isotope-container");
+  if (!portfolio) return;
+
+  const iso = new Isotope(portfolio, {
+    itemSelector: ".isotope-item",
+    layoutMode: "masonry"
+  });
+
+  const hash = window.location.hash.replace("#", "");
+
+  const filtersMap = {
+    avisos: ".filter-app",
+    impresos: ".filter-product",
+    digital: ".filter-branding"
+  };
+
+  if (filtersMap[hash]) {
+    iso.arrange({ filter: filtersMap[hash] });
+
+    document
+      .querySelectorAll(".portfolio-filters li")
+      .forEach(li => li.classList.remove("filter-active"));
+
+    const activeBtn = document.querySelector(
+      `[data-filter="${filtersMap[hash]}"]`
+    );
+    if (activeBtn) activeBtn.classList.add("filter-active");
+  }
+});
