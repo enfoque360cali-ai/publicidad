@@ -1824,9 +1824,8 @@ section,
 }
 
 
-
 <style>
-.hero img {
+img[src*="logo.png"] {
   width: 70%;
   max-width: 420px;
   height: auto;
