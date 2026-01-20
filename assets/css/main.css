@@ -1854,7 +1854,7 @@ section,
 /* MÓVIL */
 @media (max-width: 768px) {
   .clients .swiper-slide {
-    width: 200px;
+    width: 400px;
   }
 }
 
