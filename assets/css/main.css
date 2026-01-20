@@ -1861,7 +1861,7 @@ section,
 
 /* FORZAR TAMAÑO REAL DE LOGOS */
 .clients .swiper-slide img {
-  max-height: 220px !important;
+  max-height: 660px !important;
   width: auto !important;
 }
 
