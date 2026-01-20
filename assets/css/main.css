@@ -306,7 +306,7 @@ h6 {
     margin: 0;
     padding: 0;
     display: flex;
-    list-style: none;
+    list-: none;
     align-items: center;
   }
 
@@ -421,7 +421,7 @@ h6 {
 
   .navmenu ul {
     display: none;
-    list-style: none;
+    list-: none;
     position: absolute;
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
@@ -565,7 +565,7 @@ h6 {
 
 .footer p {
   font-size: 15;
-  font-style: italic;
+  font-: italic;
   padding: 0;
   margin: 0 0 30px 0;
 }
@@ -710,7 +710,7 @@ h6 {
 .page-title nav ol {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
+  list-: none;
   margin: 0;
   font-size: 16px;
   font-weight: 600;
@@ -929,7 +929,7 @@ section,
 }
 
 .about .content ul {
-  list-style: none;
+  list-: none;
   padding: 0;
 }
 
@@ -1062,7 +1062,7 @@ section,
 }
 
 .features .features-item ul {
-  list-style: none;
+  list-: none;
   padding: 0;
 }
 
@@ -1154,7 +1154,7 @@ section,
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
-  list-style: none;
+  list-: none;
   text-align: center;
 }
 
@@ -1320,7 +1320,7 @@ section,
 }
 
 .team .team-member .member-info p {
-  font-style: italic;
+  font-: italic;
   font-size: 14px;
   line-height: 26px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
@@ -1367,7 +1367,7 @@ section,
 
 .pricing ul {
   padding: 20px 0;
-  list-style: none;
+  list-: none;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   text-align: left;
   line-height: 20px;
@@ -1649,7 +1649,7 @@ section,
 }
 
 .portfolio-details .portfolio-info ul {
-  list-style: none;
+  list-: none;
   padding: 0;
   font-size: 15px;
 }
@@ -1739,7 +1739,7 @@ section,
 }
 
 .portfolio-details .portfolio-description .testimonial-item p {
-  font-style: italic;
+  font-: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
 }
@@ -1793,7 +1793,7 @@ section,
 }
 
 .service-details ul {
-  list-style: none;
+  list-: none;
   padding: 0;
   font-size: 15px;
 }
@@ -1814,7 +1814,7 @@ section,
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
-  /* Add your styles here */
+  /* Add your s here */
 }
 
 .about-video{
@@ -1824,13 +1824,6 @@ section,
 }
 
 
-<style>
-img[src*="logo.png"] {
-  width: 100%;
-  max-width: 900px;
-  height: auto;
-}
-</style>
 
 
 
@@ -1841,16 +1834,16 @@ img[src*="logo.png"] {
 ================================ */
 
 .clients .swiper-slide {
+  width: 260px;              /* 👈 AUMENTA EL TAMAÑO REAL */
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 140px; /* fuerza más espacio vertical */
 }
 
 .clients .swiper-slide img {
-  max-height: 140px;  /* 🔥 AQUI ESTÁ LA CLAVE */
-  width: auto;
-  opacity: 0.95;
+  width: 100%;
+  height: auto;
+  max-height: none;          /* 👈 MUY IMPORTANTE */
   transition: transform 0.3s ease;
 }
 
@@ -1861,18 +1854,6 @@ img[src*="logo.png"] {
 /* MÓVIL */
 @media (max-width: 768px) {
   .clients .swiper-slide {
-    height: 110px;
+    width: 200px;
   }
-
-  .clients .swiper-slide img {
-    max-height: 110px;
-  }
-}
-
-
-
-
-.clients .swiper-slide img {
-  max-height: 140px !important;
-  width: auto !important;
 }
